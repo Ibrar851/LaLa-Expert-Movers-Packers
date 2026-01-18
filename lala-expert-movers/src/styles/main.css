@@ -1,0 +1,361 @@
+/* =====================
+   NAVBAR
+===================== */
+.main-navbar {
+  background-color: rgba(255, 255, 255, 0.5); /* top pe soft */
+  transition: background-color 0.3s ease;
+}
+
+.main-navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95); /* scroll ke baad strong */
+}
+
+
+/* BRAND */
+.navbar-brand-custom {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2563eb !important;
+}
+
+/* LINKS */
+.nav-link {
+  color: #1f2937 !important;
+  font-weight: 600;              /* 🔥 MORE BOLD */
+  font-size: 15.5px;             /* professional size */
+  letter-spacing: 0.3px;         /* premium feel */
+  padding: 8px 16px !important;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2563eb !important;
+}
+
+.nav-link.active {
+  color: #2563eb !important;
+  font-weight: 700;              /* 🔥 ACTIVE MORE BOLD */
+}
+
+
+/* CONTACT BUTTON */
+.contact-btn {
+  background: #2563eb;
+  color: white !important;
+  padding: 8px 18px !important;
+  border-radius: 30px;
+  margin-left: 8px;
+}
+
+.contact-btn:hover {
+  background: #1e40af;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .main-navbar {
+    background: #ffffff;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+  }
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #bfdbfe;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-slider {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hero-img {
+  height: 420px;
+  object-fit: cover;
+}
+
+/* =====================
+   HERO BACKGROUND SLIDER
+===================== */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-slider {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-bg-img {
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.45; /* ✅ IMAGE OPACITY */
+}
+
+/* DARK OVERLAY */
+.hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+/* CONTENT OVER SLIDER */
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* DOTS STYLE (PROFESSIONAL) */
+.carousel-indicators {
+  bottom: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* =====================
+   GENERAL SECTIONS
+===================== */
+.section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* =====================
+   SERVICES
+===================== */
+.services-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.service-card {
+  background: #f8fafc;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-points {
+  list-style: disc;
+  padding-left: 20px;
+  color: #374151;
+  text-align: left;
+}
+
+/* =====================
+   TRUST / STATS
+===================== */
+.trusted-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.trusted-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-icon {
+  font-size: 42px;
+  color: #2563eb;
+}
+
+.trusted-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.trusted-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* =====================
+   WHY SECTION
+===================== */
+.why-section {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.why-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.area-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+/* =====================
+   TESTIMONIALS
+===================== */
+.testimonials-section {
+  background-color: #f8fafc;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #374151;
+}
+
+.user-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* =====================
+   WHATSAPP FLOAT
+===================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+
+  text-decoration: none; /* ✅ LINE REMOVE */
+  outline: none; /* ✅ FOCUS LINE REMOVE */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+  text-decoration: none; /* ✅ HOVER LINE REMOVE */
+}
+
+.whatsapp-float:focus,
+.whatsapp-float:active {
+  outline: none;
+  text-decoration: none;
+}
+/* =====================
+   ANIMATION
+===================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
