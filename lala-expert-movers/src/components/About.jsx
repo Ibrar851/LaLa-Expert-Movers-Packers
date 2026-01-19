@@ -7,7 +7,7 @@ const About = () => {
         <Row className="align-items-center">
           
           {/* LEFT CONTENT */}
-          <Col md={6}>
+          <Col md={6} className="mb-4 mb-md-0">
             <h2 className="section-title text-start">
               About LaLa Expert Movers
             </h2>

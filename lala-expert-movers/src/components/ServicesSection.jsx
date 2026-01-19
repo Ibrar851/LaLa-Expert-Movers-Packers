@@ -62,7 +62,7 @@ const servicesData = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="services-section">
+    <section id="services" className="services-section mt-5">
       <Container>
         <div className="text-center mb-5 fade-in">
           <h2 className="section-title">Comprehensive Services</h2>

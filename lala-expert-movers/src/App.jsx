@@ -1,13 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-
 import MainNavbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
 import Areas from "./components/Areas";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           path="/"
           element={
             <>
-              {/* Home Sections with IDs for scrolling */}
               <div id="home"><Home /></div>
               <div id="services"><Services /></div>
               <div id="about"><About /></div>
@@ -29,8 +27,7 @@ function App() {
             </>
           }
         />
-
-        {/* Optional separate routes if you want direct URLs */}
+        {/* Optional direct links */}
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/why-choose-us" element={<WhyChoose />} />

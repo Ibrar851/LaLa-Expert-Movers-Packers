@@ -9,7 +9,7 @@ const Home = () => {
         <Carousel
           fade
           controls={false}
-          indicators={true} // ✅ DOTS ENABLE
+          indicators={true}
           interval={4000}
           pause={false}
           className="hero-bg-slider"
@@ -31,7 +31,10 @@ const Home = () => {
             <Row className="align-items-center min-vh-100">
               <Col md={7} className="text-md-start text-center">
                 <h1 className="hero-title">
-                  Reliable & Professional <br />
+                  <span className="text-warning fw-bold">
+                    Reliable & Professional
+                  </span>{" "}
+                  <br />
                   <span>Movers and Packers in UAE</span>
                 </h1>
 
@@ -39,7 +42,7 @@ const Home = () => {
                   Safe, fast, and affordable relocation services across UAE.
                 </p>
 
-                <div className="d-flex gap-3 justify-content-md-start justify-content-center">
+                <div className="d-flex gap-3 justify-content-md-start justify-content-center hero-buttons">
                   <Button className="btn-light-custom">Get Free Quote</Button>
 
                   <Button
@@ -59,7 +62,7 @@ const Home = () => {
 
       {/* WHATSAPP FLOAT */}
       <a
-        href="https://wa.me/971543818544"
+        href="https://wa.me/0551864943"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"

@@ -8,11 +8,7 @@ const MainNavbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -33,27 +29,28 @@ const MainNavbar = () => {
 
   return (
     <Navbar
-      fixed="top"
       expand="md"
+      fixed="top"
       className={`main-navbar shadow-sm ${scrolled ? "scrolled" : ""}`}
+      collapseOnSelect
     >
       <Container>
         <Navbar.Brand
           as={Link}
           to="/"
-          onClick={() => scrollToSection("home")}
-          style={{
-            color: "blue", // text color
-            fontWeight: "bold", // bold text
-            fontSize: "1.8rem", // text size (adjust as needed)
-          }}
+          className="navbar-brand-custom d-flex align-items-center"
         >
-          <i className="fas fa-truck-moving me-2"></i>
-          LaLa Expert Movers & Packers
+          <i className="fas fa-truck-moving me-2 text-primary"></i>
+
+          <span className="brand-text">
+            <span className="text-primary fw-bold">LaLa</span>{" "}
+            <span className="text-danger fw-bold">Expert Movers</span>{" "}
+            <span className="text-primary fw-bold">& Packers</span>
+          </span>
         </Navbar.Brand>
 
-        <Navbar.Toggle />
-        <Navbar.Collapse>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto align-items-center">
             <Nav.Link onClick={() => handleClick("home")}>Home</Nav.Link>
             <Nav.Link onClick={() => handleClick("about")}>About</Nav.Link>

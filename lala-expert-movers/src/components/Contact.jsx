@@ -2,10 +2,10 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section contact-section">
       <Container>
-        <h2 className="section-title">Contact Us</h2>
-        <Row>
+        <h2 className="section-title text-center mb-5">Contact Us</h2>
+        <Row className="g-4">
           <Col md={6}>
             <p><i className="fas fa-phone me-2"></i> 055 1864943</p>
             <p><i className="fas fa-envelope me-2"></i> info@lalaexpertmovers.com</p>

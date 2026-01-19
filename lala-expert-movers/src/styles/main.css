@@ -4,62 +4,83 @@
 .main-navbar {
   background-color: rgba(255, 255, 255, 0.5); /* top pe soft */
   transition: background-color 0.3s ease;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .main-navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.95); /* scroll ke baad strong */
 }
 
-
-/* BRAND */
 .navbar-brand-custom {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #2563eb !important;
+  max-width: 75%;
+  white-space: normal; /* text wrap allow */
+  line-height: 1.2;
 }
 
-/* LINKS */
+.brand-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: 0.9rem; /* mobile me thora chota */
+  }
+}
+
 .nav-link {
   color: #1f2937 !important;
-  font-weight: 600;              /* 🔥 MORE BOLD */
-  font-size: 15.5px;             /* professional size */
-  letter-spacing: 0.3px;         /* premium feel */
+  font-weight: 600;
+  font-size: 15.5px;
+  letter-spacing: 0.3px;
   padding: 8px 16px !important;
   text-transform: capitalize;
   transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #2563eb !important;
-}
-
+.nav-link:hover,
 .nav-link.active {
   color: #2563eb !important;
-  font-weight: 700;              /* 🔥 ACTIVE MORE BOLD */
+  font-weight: 700;
 }
 
-
-/* CONTACT BUTTON */
 .contact-btn {
   background: #2563eb;
   color: white !important;
   padding: 8px 18px !important;
   border-radius: 30px;
   margin-left: 8px;
+  transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
   background: #1e40af;
 }
 
-/* MOBILE */
+/* =====================
+   RESPONSIVE MOBILE NAVBAR
+===================== */
 @media (max-width: 768px) {
   .main-navbar {
-    background: #ffffff;
+    background-color: #ffffff !important;
+    padding: 10px 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px 0 !important;
+    font-size: 16px;
   }
 
   .contact-btn {
-    margin-top: 10px;
+    margin: 12px 0 0 0 !important;
+  }
+
+  .navbar-brand-custom {
+    font-size: 1.5rem;
   }
 }
 
@@ -70,6 +91,8 @@
   background: linear-gradient(135deg, #1e3a8a, #3b82f6);
   color: white;
   padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -100,11 +123,6 @@
 /* =====================
    HERO BACKGROUND SLIDER
 ===================== */
-.hero-section {
-  position: relative;
-  overflow: hidden;
-}
-
 .hero-bg-slider {
   position: absolute;
   inset: 0;
@@ -114,10 +132,9 @@
 .hero-bg-img {
   height: 100vh;
   object-fit: cover;
-  opacity: 0.45; /* ✅ IMAGE OPACITY */
+  opacity: 0.45;
 }
 
-/* DARK OVERLAY */
 .hero-overlay::before {
   content: "";
   position: absolute;
@@ -126,13 +143,12 @@
   z-index: 2;
 }
 
-/* CONTENT OVER SLIDER */
 .hero-content {
   position: relative;
   z-index: 3;
 }
 
-/* DOTS STYLE (PROFESSIONAL) */
+/* DOTS STYLE */
 .carousel-indicators {
   bottom: 30px;
 }
@@ -174,7 +190,7 @@
    SERVICES
 ===================== */
 .services-section {
-  padding: 80px 0;
+  padding: 80px 20px;
   background-color: #ffffff;
 }
 
@@ -328,15 +344,13 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   z-index: 999;
   transition: transform 0.3s ease;
-
-  text-decoration: none; /* ✅ LINE REMOVE */
-  outline: none; /* ✅ FOCUS LINE REMOVE */
+  text-decoration: none;
+  outline: none;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
   color: white;
-  text-decoration: none; /* ✅ HOVER LINE REMOVE */
 }
 
 .whatsapp-float:focus,
@@ -344,6 +358,7 @@
   outline: none;
   text-decoration: none;
 }
+
 /* =====================
    ANIMATION
 ===================== */
@@ -357,5 +372,42 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* =====================
+   RESPONSIVE HERO + SECTIONS
+===================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .trusted-title {
+    font-size: 28px;
+  }
+
+  .why-section {
+    padding: 50px 15px;
+  }
+
+  .testimonials-section .testimonial-card {
+    padding: 20px;
   }
 }

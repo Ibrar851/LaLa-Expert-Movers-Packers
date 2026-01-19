@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row>
-          <Col md={4}>
+        <Row className="g-4">
+          <Col md={4} xs={12}>
             <h5>LaLa Expert Movers</h5>
             <p>Professional movers & packers in UAE.</p>
           </Col>
 
-          <Col md={4}>
+          <Col md={4} xs={12}>
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li><a href="#home">Home</a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
             </ul>
           </Col>
 
-          <Col md={4}>
+          <Col md={4} xs={12}>
             <h6>Contact</h6>
             <p>📞 055 1864943</p>
             <p>📧 info@lalaexpertmovers.com</p>
