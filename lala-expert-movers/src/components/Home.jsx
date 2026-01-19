@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* WHATSAPP FLOAT */}
       <a
-        href="https://wa.me/0551864943"
+        href="https://wa.me/055 1864943"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
