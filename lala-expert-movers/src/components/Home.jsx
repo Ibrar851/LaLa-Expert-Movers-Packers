@@ -48,7 +48,7 @@ const Home = () => {
                   <Button
                     className="btn-outline-custom"
                     as="a"
-                    href="tel:0551864943"
+                    href="tel:+971 551864943"
                   >
                     <i className="fas fa-phone me-2"></i>
                     Call Now
@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* WHATSAPP FLOAT */}
       <a
-        href="https://wa.me/055 1864943"
+        href="https://wa.me/+971 551864943"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
